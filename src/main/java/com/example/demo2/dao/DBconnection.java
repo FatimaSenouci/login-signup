@@ -1,5 +1,5 @@
-package dao;
-import models.usersModel;
+package com.example.demo2.dao;
+import com.example.demo2.models.usersModel;
 
 import java.sql.*;
 

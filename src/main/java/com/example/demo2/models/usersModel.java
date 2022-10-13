@@ -1,4 +1,4 @@
-package models;
+package com.example.demo2.models;
 
 public class usersModel {
    private String passwordid;

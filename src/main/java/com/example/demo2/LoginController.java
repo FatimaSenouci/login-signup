@@ -1,6 +1,6 @@
 package com.example.demo2;
 
-import dao.DBconnection;
+import com.example.demo2.dao.DBconnection;
 import io.github.palexdev.materialfx.controls.MFXPasswordField;
 import io.github.palexdev.materialfx.controls.MFXTextField;
 import io.github.palexdev.materialfx.dialogs.*;
@@ -15,7 +15,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 import javafx.stage.Window;
-import models.usersModel;
+import com.example.demo2.models.usersModel;
 
 import java.io.IOException;
 import java.sql.SQLException;

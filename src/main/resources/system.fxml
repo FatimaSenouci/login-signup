@@ -18,12 +18,16 @@
             <Image url="@rouge.jpg" />
          </image>
       </ImageView>
-      <VBox layoutX="23.0" layoutY="24.0" prefHeight="375.0" prefWidth="309.0" spacing="20.0">
+      <VBox layoutX="24.0" layoutY="25.0" prefHeight="355.0" prefWidth="309.0" spacing="20.0">
          <children>
-            <MFXTextField floatingText="Username" prefHeight="49.0" prefWidth="289.0" />
-            <MFXPasswordField floatingText="Password" prefHeight="49.0" prefWidth="270.0" />
-            <MFXPasswordField floatingText="Confirm Your Password " prefHeight="49.0" prefWidth="287.0" />
-            <MFXButton prefHeight="48.0" prefWidth="263.0" text="Sign-Up" textFill="#640679">
+            <MFXTextField fx:id="userNS" floatingText="Username" prefHeight="49.0" prefWidth="289.0">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </MFXTextField>
+            <MFXPasswordField fx:id="passWS" floatingText="Password" prefHeight="49.0" prefWidth="270.0" />
+            <MFXPasswordField fx:id="confirmPW" floatingText="Confirm Your Password " prefHeight="49.0" prefWidth="287.0" />
+            <MFXButton fx:id="SIGNUP" prefHeight="48.0" prefWidth="263.0" text="Sign-Up" textFill="#640679">
                <padding>
                   <Insets bottom="15.0" left="10.0" right="15.0" top="10.0" />
                </padding>
@@ -39,7 +43,7 @@
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                </padding>
                <VBox.margin>
-                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="5.0" />
                </VBox.margin>
                <font>
                   <Font name="Book Antiqua Bold" size="12.0" />
