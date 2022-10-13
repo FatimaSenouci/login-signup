@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXCheckbox?>
+<?import io.github.palexdev.materialfx.controls.MFXPasswordField?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="330.0" prefWidth="570.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo2.LoginController">
+   <right>
+      <VBox prefHeight="487.0" prefWidth="339.0" spacing="25.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER">
+         <opaqueInsets>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </opaqueInsets>
+         <padding>
+            <Insets left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <MFXTextField fx:id="usernameid" floatingText="Username" prefHeight="61.0" prefWidth="255.0" promptText="Username">
+            <VBox.margin>
+               <Insets bottom="11.0" left="11.0" right="11.0" top="11.0" />
+            </VBox.margin>
+            <padding>
+               <Insets bottom="11.0" left="11.0" right="11.0" top="11.0" />
+            </padding>
+         </MFXTextField>
+         <MFXPasswordField fx:id="passwordid" floatingText="Password" prefHeight="61.0" prefWidth="254.0" promptText="Password">
+            <VBox.margin>
+               <Insets bottom="11.0" left="11.0" right="11.0" top="11.0" />
+            </VBox.margin>
+            <padding>
+               <Insets bottom="11.0" left="11.0" right="11.0" top="11.0" />
+            </padding>
+         </MFXPasswordField>
+         <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+            <opaqueInsets>
+               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </opaqueInsets>
+            <MFXCheckbox>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <graphic>
+                  <Label text="Remember me  " textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </graphic>
+            </MFXCheckbox>
+         </HBox>
+         <MFXButton onAction="#signUp" text="sign-Up" />
+         <MFXButton onMouseClicked="#goSign" text="go " />
+         <MFXButton alignment="TOP_CENTER" onAction="#onLogin" prefHeight="33.0" prefWidth="282.0" rippleColor="#840cd4" text="Login" textAlignment="CENTER" textFill="#f57500">
+            <VBox.margin>
+               <Insets bottom="11.0" left="11.0" right="11.0" top="11.0" />
+            </VBox.margin>
+            <padding>
+               <Insets bottom="11.0" left="11.0" right="11.0" top="11.0" />
+            </padding>
+            <font>
+               <Font name="Arial Black" size="12.0" />
+            </font>
+            <effect>
+               <Blend mode="BLUE" />
+            </effect>
+         </MFXButton>
+      </VBox>
+   </right>
+   <left>
+      <HBox>
+         <children>
+            <ImageView fitHeight="434.0" fitWidth="252.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pnc3.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </left>
+</BorderPane>
